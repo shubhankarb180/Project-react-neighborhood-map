@@ -15,7 +15,8 @@ const MapComponent = withScriptjs(
     return (
       <GoogleMap
         defaultZoom={12}
-        defaultCenter={defaultCenter}
+		defaultCenter={defaultCenter}
+		role="application"
       >
         {filteredPlaces.map((place, id) => (
           <Marker 

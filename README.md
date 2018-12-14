@@ -6,14 +6,13 @@ It is a single page app uses React and Google Maps API to some places to visit w
 ## Instructions
 
 * Download or clone the repository from the Green button in the repository menu.
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+* Open terminal and enter command : <code>npm install</code>
+* Start the App by entering commnad : <code>npm start</code>
 
 Incase of any further assistance check for ways to start a React App.
+Due to the billing servies, you may see only for development services watermark on the map.
 
 ## Dependencies
 
-* HTML5
-* CSS3
 * Google Maps API
 * Create React App

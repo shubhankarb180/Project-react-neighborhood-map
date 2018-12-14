@@ -28,7 +28,7 @@ export default class Sidebar extends Component {
     const { filteredPlaces, sidebarStyle, onPlaceSelected } = this.props;
 
     return (
-    <div id="left-sidebar" className="sidenav" style={sidebarStyle}>
+    <aside id="left-sidebar" className="sidenav" style={sidebarStyle}>
       <a
         className="closebtn"
         onClick={() => this.props.handleViewSidebar(false)}
@@ -59,6 +59,6 @@ export default class Sidebar extends Component {
           </a>
         ))
       }
-    </div>)
+    </aside>)
   }
 }

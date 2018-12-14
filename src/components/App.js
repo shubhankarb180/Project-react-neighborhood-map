@@ -53,6 +53,10 @@ export default class App extends Component {
       return "";
     });
 
+    window.gm_authFailure = () => {
+      alert("An error occurred while trying to load Google Map");
+    };
+
     setTimeout(function(){
       if (errors !== undefined && errors.length > 0) {
         window.alert(errors.toString().replace(new RegExp(',', 'g'), ''));
@@ -113,7 +117,7 @@ export default class App extends Component {
           <span className="burgerIcon"
             tabIndex="1"
             onClick={() => this.handleViewSidebar(true)}>&#9776;</span>
-          <div id="mapContent">
+          <div id="mapContent" role="application">
             <MapComponent
               googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB868uN5xDP2HfMsvu08Z8-TZMR1t33-Tg&v=3.exp&libraries=places"
               loadingElement={<div style={style} />}
